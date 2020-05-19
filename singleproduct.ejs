@@ -1,0 +1,18 @@
+<%- include('partials/header'); -%>
+<h1> <%= booktitle %></h1>
+<br />
+<p>
+  <img src="<%= imageURL %>" style="width:170px;height:170px;margin-left:15px;float:right;" />
+  <%= bookdescription %>
+</p>
+<br>
+<strong>price : ₹<%= bookcost %></strong>
+<br>
+<strong>Contact seller : <%= sellermail %></strong>
+
+
+<address>
+<a href="mailto:<%= sellermail %>">Buy Book</a><br> 
+</address>
+
+<%- include('partials/footer'); -%>

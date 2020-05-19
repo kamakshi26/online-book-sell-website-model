@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+<h1>Home</h1>
+<div class="">
+  <%= homecontent %>
+</div>
+<br />
+<br>
+  <h1>Latest Arrivals</h1>
+  <br />
+
+  <div>
+    <%  printcontent.forEach(function(iitr){ %>
+    <div class="arrange">
+      <h1><%= iitr.booktitle %></h1>
+      <br>
+    <a href="singleproduct/<%= iitr._id %>"><img src="<%= iitr.imageURL %>" width="250" height="250"/></a>
+    </div>
+    <% }); %>
+  </div>
+
+
+  <%- include('partials/footer'); -%>
